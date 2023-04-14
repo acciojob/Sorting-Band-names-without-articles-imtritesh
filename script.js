@@ -1,7 +1,8 @@
 //your code here
 
-sortedBands.forEach(band => {
-        const li = document.createElement('li');
-        li.textContent = band;
-        bandsList.appendChild(li);
-      });
+
+sortedBandNames.forEach(bandName => {
+  const li = document.createElement('li');
+  li.textContent = bandName;
+  bandList.appendChild(li);
+});
