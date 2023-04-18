@@ -1,12 +1,12 @@
-//your code here
-const sortedBandNames = bandNames.sort((a, b) => {
-  const nameA = a.replace(articleRegex, '');
-  const nameB = b.replace(articleRegex, '');
-  return nameA.localeCompare(nameB);
-});
-
-sortedBandNames.forEach(bandName => {
-  const li = document.createElement('li');
-  li.textContent = bandName;
-  bandList.appendChild(li);
-});
+let arr = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
+const ans = [];
+for(let i=0; i<arr.length; i++){
+  let str = arr[i];
+  if(str.startsWith('the' || 'a' || 'an' || 'An' || 'The' || 'A')){
+    ans.unshift(arr[i]);
+  }else{
+    ans.push(arr[i]);
+  }
+}
+ans.reverse();
+console.log(ans);
