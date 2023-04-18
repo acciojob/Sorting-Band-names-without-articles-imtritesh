@@ -8,6 +8,6 @@ for(let i=0; i<arr.length; i++){
     ans.unshift(`<li>${str}</li>`);
   }
 }
-let nice =""; ans.forEach(element => nice += element);
-document.getElementById("band").innerHTML = nice;
+// let nice =""; ans.forEach(element => nice += element);
+document.getElementById("band").innerHTML = ans;
 console.log(ans);
