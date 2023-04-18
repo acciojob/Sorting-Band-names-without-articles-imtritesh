@@ -3,9 +3,9 @@ const ans = [];
 for(let i=0; i<arr.length; i++){
   let str = arr[i];
   if(str.startsWith('An' || 'The' || 'A')){
-    ans.push(arr[i]);
+    ans.push(`<li>${str}<li>`);
   }else{
-    ans.unshift(arr[i]);
+    ans.unshift(`<li>${str}<li>`);
   }
 }
 console.log(ans);
